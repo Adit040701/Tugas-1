@@ -1,0 +1,41 @@
+class Bangun_Ruang:
+    __vendor_message = "Persegi Panjang"
+    nama    =""
+    panjang =""
+    lebar   =""
+    luas    =""
+
+    def __init__(self, nama):
+        self.nama = nama
+
+    def get_vendor_message(self):
+        print(self.__vendor_message)
+
+    def set_panjang(self, panjang):
+        self.panjang = panjang
+
+    def set_lebar(self, lebar):
+        self.lebar = lebar
+
+    def set_luas(self,luas ):
+        self.luas = luas
+
+pk = Bangun_Ruang("Objek Persegi Panjang Pertama")
+pk1 = Bangun_Ruang("Objek Persegi Panjang Kedua")
+pk2 = Bangun_Ruang("Objek Persegi Panjang Ketiga")
+
+pk.set_panjang(5)
+pk1.set_panjang(6)
+pk2.set_panjang(7)
+
+pk.set_lebar(2)
+pk1.set_lebar(3)
+pk2.set_lebar(4)
+
+pk.luas = pk.panjang*pk.lebar
+pk1.luas = pk1.panjang*pk1.lebar
+pk2.luas = pk2.panjang*pk2.lebar
+
+print("%s\nPanjang persegi panjang adalah : %d \nLebar persegi panjang adalah : %d \nLuas persegi panjang adalah : %s\n" % (pk.nama, pk.panjang, pk.lebar,pk.luas))
+print("%s\nPanjang persegi panjang adalah : %d \nLebar persegi panjang adalah : %d \nLuas persegi panjang adalah : %s\n" % (pk1.nama, pk1.panjang, pk1.lebar,pk1.luas))
+print("%s\nPanjang persegi panjang adalah : %d \nLebar persegi panjang adalah : %d \nLuas persegi panjang adalah : %s\n" % (pk2.nama, pk2.panjang, pk2.lebar,pk2.luas))
